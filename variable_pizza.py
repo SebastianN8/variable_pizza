@@ -14,14 +14,14 @@ def cost_pizza(toppings_passed_in, size_passed_in):
 	# If statement
 	if (toppings_passed_in in my_toppings) and size_passed_in == 'Large':
 		subtotal = (6.0 + (0.25+(toppings_passed_in*0.75)))
-		tax = (subtotal * 0.13)
+		tax = round((subtotal * 0.13)*100)/100
 		total = (subtotal + tax)
 		# Printing
 		print 'Subtotal is: $', subtotal; print 'The taxt is: $', tax; print 'The total is: $', total
 
 	elif (toppings_passed_in in my_toppings) and size_passed_in == 'Extra Large':
 		subtotal = (10.0 + (0.25+(toppings_passed_in*0.75)))
-		tax = (subtotal * 0.13)
+		tax = round((subtotal * 0.13)*100)/100
 		total = (subtotal + tax)
 		# Printing
 		print 'Subtotal is: $', subtotal; print 'The taxt is: $', tax; print 'The total is: $', total
